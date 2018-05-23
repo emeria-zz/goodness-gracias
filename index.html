@@ -21,7 +21,8 @@
 				<!-- Header -->
 					<header id="header">
 						<div class="logo">
-							<span class="icon fa-heart"></span>
+							<span class="icon fa-beer"></span>
+<!--                            <span class="icon fa-heart"></span>-->
 						</div>
 						<div class="content">
 							<div class="inner">
@@ -152,7 +153,8 @@
     						<!-- Contact -->
 							<article id="contact">
 								<h2 class="major">RSVP</h2>
-								<p>Please RSVP by <b>August 1</b>, whether or not you will be attending. Use the form below to email GoodnessGraciasParty@gmail.com. </p>
+								<p>Please RSVP by <b>August 1</b>, whether or not you will be attending.</p> 
+<!--                                    Use the form below to email GoodnessGraciasParty@gmail.com.-->
 								<form id="gform" method="post" action="https://script.google.com/macros/s/AKfycbzEzYdZLGZx14TEL24MNACOHbX2xFda1sUXncVe/exec">
 									<div class="field half first">
 										<label for="name">Name</label>
@@ -162,8 +164,15 @@
 										<label for="email">Email (Required)</label>
 										<input type="text" name="email" id="email" />
 									</div>
-									<div class="field">
-										<label for="message">Message</label>
+                                    <div class="field half first">
+										<label for="attending">Attending?</label>
+                                        <fieldset>
+                                            <input type="radio" name="attending" value="Yes" />Yes<br />
+                                            <input type="radio" name="attending" value="No" />No<br />
+                                        </fieldset>
+									</div>
+									<div class="field half">
+										<label for="message">Message (Optional)</label>
 										<textarea name="message" id="message" rows="4"></textarea>
 									</div>
 									<ul class="actions">
