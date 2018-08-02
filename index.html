@@ -296,13 +296,22 @@
 									<ul class="actions">
 										<li><input type="submit" value="Send Message" class="special" /></li>
 										<li><input type="reset" value="Reset" /></li>
-									</ul>
-                                <div style="display:none;" id="thankyou_message">
-    							 <h2>Thanks for the RSVP! Your email was sent.</h2>
-  								</div>
-									
+                                   </ul>
+                                    
+                                        <!-- Customise the Thankyou Message People See when they submit the form: -->
+                                    <div class="thankyou_message" style="display:none;">
+                                      Thanks for the RSVP! Your email was sent.
+                                    </div>
 								</form>
-							
+															
+                               
+										<!-- Submit the Form to Google Using "AJAX" -->
+  			
+                                
+                                <script data-cfasync="false" type="text/javascript"
+  							src="assets/js/form-submission-handler.js"></script>
+                                
+                                
   						<!--code from https://github.com/dwyl/html-form-send-email-via-google-script-without-server> -->
 
   
@@ -330,8 +339,6 @@
             <script type="text/javascript" src="//code.jquery.com/jquery-migrate-1.2.1.min.js"></script>
             <script type="text/javascript" src="slick/slick.min.js"></script>
             <script type="text/javascript" src="slick/app.js"></script>
-							<!-- Submit the Form to Google Using "AJAX" -->
-  							<script data-cfasync="false" type="text/javascript"
-  							src="assets/js/form-submission-handler.js"></script>
+						
 	</body>
 </html>
