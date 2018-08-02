@@ -273,7 +273,7 @@
                                 
 <!--                                    Use the form below to email GoodnessGraciasParty@gmail.com.-->
 								<form id="gform" method="POST" action="https://script.google.com/macros/s/AKfycbwhDJsMIY2RSSsbSDy5LIrzjT9hvxxZEKnADvNHdCjglkhewJg/exec">
-<!--
+
 									<div class="field half first">
 										<label for="name">Name</label>
 										<input type="text" name="name" id="name" />
@@ -297,17 +297,15 @@
 										<li><input type="submit" value="Send Message" class="special" /></li>
 										<li><input type="reset" value="Reset" /></li>
 									</ul>
--->
+                                <div style="display:none;" id="thankyou_message">
+    							 <h2>Thanks for the RSVP! Your email was sent.</h2>
+  								</div>
 									
 								</form>
-							<div style="display:none;" id="thankyou_message">
-    							<h2>Thanks for the RSVP! Your email was sent.</h2>
-  								</div>
-  						<!--code from https://github.com/dwyl/html-form-send-email-via-google-script-without-server>
+							
+  						<!--code from https://github.com/dwyl/html-form-send-email-via-google-script-without-server> -->
 
-  							<!-- Submit the Form to Google Using "AJAX" -->
-  							<script data-cfasync="false" type="text/javascript"
-  							src="https://cdn.rawgit.com/dwyl/html-form-send-email-via-google-script-without-server/master/form-submission-handler.js"></script>
+  
 							</article>
 
 					</div>
@@ -332,6 +330,8 @@
             <script type="text/javascript" src="//code.jquery.com/jquery-migrate-1.2.1.min.js"></script>
             <script type="text/javascript" src="slick/slick.min.js"></script>
             <script type="text/javascript" src="slick/app.js"></script>
-
+							<!-- Submit the Form to Google Using "AJAX" -->
+  							<script data-cfasync="false" type="text/javascript"
+  							src="assets/js/form-submission-handler.js"></script>
 	</body>
 </html>
